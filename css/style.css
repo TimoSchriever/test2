@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ body {
+  font-family: serif;
+ }
+ a {
+  text-decoration: none;
+ }
+ li {
+  list-style: none;
+ }
+ 
+
+ /* navbar styling*/
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1%;
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+}
+
+/* navbar for lesaanbod */
+.header-lesaanbod {
+  border-bottom: 1px solid black;
+  width: 1517px;
+  left: -20px;;
+}
+
+.logo {
+  cursor: pointer;
+  width: auto;
+  height: 100px;
+}
+
+.nav-midden a,
+.login,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav-midden {
+  list-style: none;
+  display: flex;
+}
+
+.nav-midden li {
+  padding: 0px 20px;
+}
+
+.nav-midden li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav-midden li a:hover {
+  color: #000000;
+}
+
+.fa-light {
+  font-weight: 150;
+  }
+
+.login {
+  padding: 9px 25px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.login:hover {
+  background-color: #4753ff;
+  color: white;
+}
+
+
+/* grid-container */
+#myDIV {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.grid-container div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  width: 25%;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* dropdown */
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(255, 255, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f5f2f2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #4753ff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* homepage */
+.home {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  float: right; 
+  font-size: 20px;
+  position: relative;
+ }
+
+ .menu li {
+  margin: left;
+  font-size: 19px;
+ }
+
+ .home:after, .home:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+ }
+
+ .home:after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 1px solid #4753ff;
+  border-right: 1px solid #4753ff;
+ }
+
+ .home:before {
+  top: -2px;
+  left: -2px;
+ }
+
+ .home:hover:after, .home:hover:before {
+  width: calc(100% + 2px);
+  transition: 0.4s, opacity 0.1s;
+  opacity: 1;
+ } 
+
+ /* lesaanbod */
+ .lesaanbod {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  float: right; 
+  font-size: 20px;
+  position: relative;
+ }
+
+ .lesaanbod:after, .lesaanbod:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+ }
+
+ .lesaanbod:after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 1px solid #4753ff;
+  border-right: 1px solid #4753ff;
+ }
+
+ .lesaanbod:before {
+  top: -2px;
+  left: -2px;
+ }
+
+ .lesaanbod:hover:after, .lesaanbod:hover:before {
+  width: calc(100% + 2px);
+  transition: 0.4s, opacity 0.1s;
+  opacity: 1;
+ } 
+
+ /* contact */
+ .contact {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  float: right; 
+  font-size: 20px;
+  position: relative;
+ }
+
+ .contact:after, .contact:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: all 0.4s, opacity 0.1s 0.4s;
+  opacity: 0;
+ }
+
+ .contact:after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 1px solid #4753ff;
+  border-right: 1px solid #4753ff;
+ }
+
+ .contact:before {
+  top: -2px;
+  left: -2px;
+ }
+
+ .contact:hover:after, .contact:hover:before {
+  width: calc(100% + 2px);
+  transition: 0.4s, opacity 0.1s;
+  opacity: 1;
+ } 
+
+/* body */
+section{
+  width: 186px;
+ }
+
+ /* arcticle front page */
+ article {
+  float: left;
+  padding: 4px;
+  width: 26%;
+  background-color: #ffffff;
+  height: 335px; /* only for demonstration, should be removed */
+}
+article h1 {
+  margin: 30px;
+}
+
+ /* side navbar Lesaanbod */
+ .sidenav {
+  height: 1340px;
+  width: 185px;
+  z-index: 1;
+  position: absolute;
+  top: 104px;
+  left: 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  background-color: #0011ff;
+  overflow-x: hidden;
+  padding-top: 0px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 3px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 60px;
+  align-items: center;
+  color: #ececec;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #ffffff; 
+  background-color: #0011ff;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* sidenavbar contact */
+.sidenav-contact {
+  height: 635px;
+  width: 185px;
+  z-index: 1;
+  position: absolute;
+  top: 104px;
+  left: 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  background-color: #0011ff;
+  overflow-x: hidden;
+  padding-top: 0px;
+  line-height: 60px;
+}
+
+.sidenav-contact a {
+  padding: 6px 6px 6px 3px;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+  color: #ececec;
+  display: block;
+}
+
+/* sidebar lidmaatschap */
+.sidenav-lidmaatschap {
+  height: 635px;
+  width: 140px;
+  z-index: 1;
+  position: absolute;
+  top: 104px;
+  left: 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  background-color: #0011ff;
+  overflow-x: hidden;
+  padding-top: 0px;
+  line-height: 60px;
+}
+.sidenav-lidmaatschap a {
+  padding: 6px 6px 6px 3px;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+  color: #ececec;
+  display: block;
+}
+
+/* styling weekoverzicht */
+ .body-right {
+  margin-left: 350px;
+  margin-right: 400px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+ }
+
+ .body-right th, h3, td{
+   width: 100%;
+ }
+
+ .body-right th {
+   font-size: 20px;
+   color: rgb(0, 0, 0);
+ }
+
+ .body-right h3 {
+  background-color: #ffffff;
+ }
+
+ .body-right td {
+  line-height: 40px;
+ }
+
+
+
+ .turnentimo {
+   background-color: red;
+ }
+ 
+ /* specifiek peuter page */
+
+ .aside-right {
+  margin-left: 160px;
+  margin-right: 400px;
+ }
+ 
+ .aside-right img {
+   width: 60%;
+   height: 60%;
+ }
+ .index-signin {
+  margin-left: 160px;
+  margin-right: 400px;
+ }
+
+ /* navbar responsive */
+ @media screen and (max-width: 600px) {
+  .header-lesaanbod li:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .header-lesaanbod li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-lesaanbod.responsive {position: relative;}
+  .header-lesaanbod.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-lesaanbod.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-lesaanbod.responsive .dropdown {float: none;}
+  .header-lesaanbod.responsive .dropdown-content {position: relative;}
+  .header-lesaanbod.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
